@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        h2 {
+            color:bisque; font-size:25px; 
+        }
+        th{
+            color:white;background-color: black;
+        }
+        body{
+            background-color:darkcyan; font-family: Verdana;
+        }
+        a{
+            color:blue;
+        }
+        div{
+            background-color: rgb(194, 27, 27);
+        }
+        td{
+            background-color: white;
+        }
+    </style>
 
 
-    <body  style="background-color: beige">
-    <h1  style=" color:rgb(81, 146, 184) ; text-align:center; fontsize:40px">P Srihas J Patel</h1>   
 
+    <body  >
+    <h1  style="text-align:center; color:rgb(95, 75, 75); font-size:30px" >P Srihas J Patel</h1>   
 
-<h1 >About Me Section</h1>
+<div>
+<h2 >About Me Section</h2>
     <p >
-    <strong>I Am <em>Srihas</em> And Im currently pursuing btech cys in <small>amrita university coimbatore</small> and dreaming of becoming top in it some day</strong>
-    </p>
+    <strong>I Am <em>Srihas</em> And Im currently pursuing btech cys in <small>amrita university coimbatore</small></strong>
+    </p></div>
 </br>
 
 
@@ -17,14 +38,15 @@
 
 </br>
    
-
-<h1 > Education Section</h1>
+<div >
+<h2 > Education Section</h2>
     <p >University: Amrita University Course: B-Tech (CSE-Cyber Security)  Batch: 2025-2029 </p>  
-    <p >No. of hackathons won:</p> <a href="file:///C:/Users/CB.SC.U4CYS25134/Desktop/code/file2.html" style="color:blue"> see</a>
-
+    <p >No. of hackathons won:</p> <a href="file:///C:/Users/CB.SC.U4CYS25134/Desktop/code/file2.html" > see</a>
+</div>
 </br>
 
-<h1 > Hobbies Section</h1>
+<div>
+<h2 > Hobbies Section</h2>
         <ul>
             <li >Skills
                 <ul>
@@ -54,10 +76,10 @@
             <dt >Education:</dt>
             <dd >I am pursuing btech cys in amrita university, coimbatore</dd>
         </dl></br>
-
+    </div>
 
         <table border="1px" > 
-            <tr>
+            <tr >
                 <th  >header 1</th>
                 <th >header 2</th>
             </tr>
@@ -75,8 +97,8 @@
 
 
         <table border="1px" > 
-            <tr>
-                <th  >header 1</th>
+            <tr >
+                <th >header 1</th>
                 <td >row 1, cell 1</td>
                 <td >row 2, cell 1</td>
                 
@@ -96,38 +118,38 @@
 
 
     <table border="1px" > 
-        <tr style="background-color: black">
+        <tr >
            
-            <th style=" color:white"; rowspan="2">Time</th>
-            <th style=" color:white"; colspan="3" >Monday</th>
-            <th style="color:white"; colspan="3" >Tuesday</th>
+            <th rowspan="2" >Time</th>
+            <th colspan="3">Monday</th>
+            <th  colspan="3" >Tuesday</th>
             
 
         </tr>
 
-        <tr style="background-color: black">
-            <th style=" color:white">CS101</th>
-            <th style=" color:white">MA205</th>
-            <th style="color:white">PHY110</th>
-            <th style="color:white">ENG201</th>
-            <th style=" color:white">LAB</th>
+        <tr >
+            <th >CS101</th>
+            <th >MA205</th>
+            <th >PHY110</th>
+            <th >ENG201</th>
+            <th >LAB</th>
             <th></th>
             
             
         </tr>
 
-        <tr style="background-color: white">
+        <tr>
             <td> 9:00-10:30</td>
             <td style="color: red">Lecture Hall A</td>
             <td rowspan="2">Bulding C</td>
             <td> <del>Room 302</del></td>
             <td> Room 301</td>
             <td rowspan="2"> <mark>Lab 5</mark></td>
-        </tr>
+        </tr> 
  
         
 
-        <tr style="background-color: white">
+        <tr >
             <td>11:00 -12:30</td>
             <td style="color:blue"> <i>Lecture Hall B</i></td>
             <td>Building D</td>
@@ -137,7 +159,57 @@
             
         <tr>
             
+        </tr> 
+    </table>
+</br>
+
+    <form action="/submit" method="post">
+        <label for=""name>Name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Submit</button>
+    </form>
+</br>
+
+    <form>
+        <label for="color">Color:</label>
+        <input type="color" id="color">
+
+        <label for="range">Range:</label>
+        <input type="range" id="range" min="0" max="100">
+    </form>
+</br>
+
+    <table border="1px" >
+        <tr>
+            <th>
+                <label for="password">Password:</label></th>
+                <td><input type="password" id="password"></td>
+                
+            </th>
         </tr>
+        <tr>
+            <th>
+                <label for="number">Number:</label></th>
+                
+                <td><input type="number" id="number" ></td>
+                
+            
+        </tr>
+        <tr>
+            <th>
+                <label for="date">Date:</label> </th>
+                <td><input type="date" type="number"></td>
+           
+        </tr>
+        <tr>
+            <th><label for="color">Color:</label></th>
+            <td><input type="color" id="color"></td>
+        </tr>
+        <tr>
+           <th><label for="range">Range:</label></th> 
+           <td><input type="range" id="range" min="0" max="100"></td>
+        </tr>
+
     </table>
 
 
